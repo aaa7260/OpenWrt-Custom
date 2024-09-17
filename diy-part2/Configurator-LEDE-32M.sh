@@ -107,6 +107,7 @@ CONFIG_PACKAGE_luci-app-argonne-config=y
 # ----------luci-app-webadmin
 CONFIG_PACKAGE_luci-app-webadmin=y
 CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_tailscale=y
 EOF
 }
 
