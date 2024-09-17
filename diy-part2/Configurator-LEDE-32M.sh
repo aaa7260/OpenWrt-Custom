@@ -106,6 +106,7 @@ CONFIG_PACKAGE_luci-theme-argonne=y
 CONFIG_PACKAGE_luci-app-argonne-config=y
 # ----------luci-app-webadmin
 CONFIG_PACKAGE_luci-app-webadmin=y
+CONFIG_PACKAGE_luci-app-zerotier=y
 EOF
 }
 
