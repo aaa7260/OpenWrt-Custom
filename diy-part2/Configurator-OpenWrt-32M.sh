@@ -33,6 +33,10 @@ modification() {
     # ref: https://github.com/ysc3839/luci-proto-minieap/pull/2
     find -type d -path '*/po/zh-cn' | xargs dirname | xargs -I'{}' ln -srvn {}/zh-cn {}/zh_Hans
 
+    # 修复 hostapd 报错
+    cp -f $sh_dir/011-fix-mbo-modules-build.patch package/network/services/hostapd/patches/011-fix-mbo-modules-build.patch
+    
+    
     echo
     echo '[MOD] 更换 luci-app-clash 的依赖 openssl 为 mbedtls'
     find -type f -path '*/luci-app-clash/Makefile' -print -exec sed -i 's/openssl/mbedtls/w /dev/stdout' {} \;
